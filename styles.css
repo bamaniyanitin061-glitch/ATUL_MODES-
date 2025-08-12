@@ -1,0 +1,41 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#e11d48;
+  --text:#e6eef8;
+  --muted:#9fb0c8;
+  --glass: rgba(255,255,255,0.03);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:980px;margin:0 auto;padding:20px}
+
+.site-header{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter: blur(4px);position:sticky;top:0;z-index:50}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.logo{height:44px;width:44px;object-fit:contain;border-radius:8px;background:var(--glass);padding:6px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+.nav a:hover{color:var(--text)}
+
+.hero{padding:60px 20px;text-align:center}
+.hero h1{font-size:2.2rem;margin:0 0 8px}
+.hero p{color:var(--muted);margin:0 0 18px}
+.actions{display:flex;gap:12px;justify-content:center}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0}
+.features article{background:var(--card);padding:18px;border-radius:12px}
+
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+.content h1{color:var(--text)}
+
+form{display:grid;gap:12px;max-width:520px}
+label{display:flex;flex-direction:column;color:var(--muted);font-size:14px}
+input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+.muted{color:var(--muted);margin-top:10px}
+@media (max-width:600px){
+  .hero h1{font-size:1.6rem}
+  .logo{height:36px;width:36px}
+}

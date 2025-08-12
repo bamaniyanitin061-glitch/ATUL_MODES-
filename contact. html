@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - ATUL_MODES</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="ATUL_MODES" class="logo" />
+        <span>ATUL_MODES</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>Contact</h1>
+    <p>Telegram pe best way hai contact karne ka: <a href="https://t.me/ATUL_MODES" target="_blank" rel="noopener">@ATUL_MODES</a></p>
+
+    <form id="contactForm" onsubmit="submitForm(event)">
+      <label>Naam
+        <input type="text" id="name" required />
+      </label>
+      <label>Email
+        <input type="email" id="email" required />
+      </label>
+      <label>Message
+        <textarea id="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn">Send</button>
+    </form>
+
+    <p id="formResult" class="muted"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> ATUL_MODES</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
